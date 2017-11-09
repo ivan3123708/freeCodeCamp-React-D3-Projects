@@ -1,0 +1,17 @@
+.ingredients {
+    padding: 2rem 2rem;
+}
+
+.ingredients h3 {
+    text-align: center;
+}
+
+.ingredients p {
+    text-align: center;
+}
+
+@media (min-width: 40rem) {
+    .ingredients {
+        padding: 2rem 5rem;
+    }
+}

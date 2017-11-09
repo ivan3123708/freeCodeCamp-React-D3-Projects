@@ -1,0 +1,64 @@
+.ReactModal__Overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 75%;
+    padding: 1rem 2rem 3rem 1rem;
+    text-align: center;
+    background: $theme-color-2;
+    border-radius: .4rem;
+    outline: none;
+}
+
+.modal form h3 {
+    text-align: left;
+}
+
+.modal form input {
+    width: 100%;
+    padding: .5rem;
+    color: $theme-color-1;
+}
+
+.modal span {
+    font-style: italic;
+}
+
+.modal form textarea {
+    width: 100%;
+    padding: .5rem;
+    color: $theme-color-1;
+    resize: none;
+}
+
+.modalClose {
+    float: right;
+    padding: 0;
+    margin: 0;
+    background: none;
+    color: $theme-color-1;
+    box-shadow: none;
+}
+
+.modalClose:active {
+    transform: none;
+}
+
+.modalSave {
+    margin: 2rem 0 0 0;
+    padding: .5rem 1rem;
+}
+
+@media (min-width: 40rem) {
+    .modal {
+        width: 30%;
+        padding: 5rem 10rem;
+    }
+
+    .modalSave {
+        padding: 1rem 3rem;
+    }
+}
