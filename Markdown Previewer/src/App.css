@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+.header {
+  background-color: #222;
+  height: 30px;
+  padding: 20px;
+  color: white;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em auto;
+  width: 90%;
+}
+
+.input {
+  width: 100%;
+}
+
+.input textarea {
+  min-height: 30em;
+  min-width: 90%;
+  max-width: 90%;
+  padding: .5em;
+}
+
+.output {
+  width: 100%;
+  padding: 0;
+  text-align: left;
+}
+
+@media (min-width: 40em) {
+
+  .wrapper {
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .input {
+    width: 50%;
+  }
+
+  .output {
+    width: 50%;
+    padding: 0 2em;
+  }
+}
