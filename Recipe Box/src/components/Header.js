@@ -7,7 +7,6 @@ const Header = () => (
             <h4>find your favorite food...</h4>
         </div>
     </div>
-    
 );
 
 export default Header;

@@ -1,0 +1,124 @@
+.App {
+  margin: 1.5rem 0;;
+  text-align: center;
+}
+
+a {
+  color: #616199;
+  text-decoration: none;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 5rem;
+  font-family: 'Rokkitt', serif;
+  font-size: 3rem;
+  color: #616199;
+}
+
+.wrapper {
+  width: 95%;
+  margin: auto;
+}
+
+.header {
+  min-height: 3rem;
+  height: auto;
+  background: #616199;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.header p {
+  margin: 0;
+  padding: .5rem 0;
+  font-family: 'Rokkitt', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.headings {
+  display: flex;
+  width: 100%;
+  margin: .3rem 0;
+}
+
+.headings > div:nth-child(n+3) {
+  cursor: pointer;
+}
+
+.number {
+  width: 5%;
+  padding: .5rem;
+  background: #5f6375;
+  color: white;
+  border: 1px solid white;
+}
+
+.avatar {
+  max-width: 2rem;
+  max-height: 2rem;
+  margin: .5rem auto;
+  border-radius: 4px;
+}
+
+.camper-name {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding: .5rem;
+  background: #5f6375;
+  color: white;
+  border: 1px solid white;
+  word-break: break-all;
+}
+
+.thirty-days-points {
+  width: 30%;
+  padding: .5rem;
+  background: #5f6375;
+  color: white;
+  border: 1px solid white;
+}
+
+.all-time-points {
+  width: 30%;
+  padding: .5rem;
+  background: #5f6375;
+  color: white;
+  border: 1px solid white;
+}
+
+.user {
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+
+.user > div {
+  background: #f7f7f7;
+  color: black
+}
+
+@media (min-width: 900px) {
+  .wrapper {
+    width: 75%;
+  }
+
+  .loading {
+    font-size: 5rem;
+  }
+
+  .header p {
+    font-size: 2rem;
+  }
+
+  .avatar {
+    margin: 0 .5rem;
+  }
+
+  .camper-name {
+    flex-direction: row;
+  }
+}

@@ -6,6 +6,8 @@
 
 .recipe-list {
     width: 100%;
+    min-height: auto;
+    height:100%;
     padding-bottom: 2rem;
     background: $theme-color-2;
     border-radius: .5rem;
@@ -51,7 +53,6 @@
 }
 
 .recipe-list-buttons {
-    margin: 2rem 0 0 0;
     text-align: center;
 }
 

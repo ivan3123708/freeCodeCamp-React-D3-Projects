@@ -11,14 +11,16 @@ class AddRecipeModal extends React.Component {
         e.preventDefault();
 
         const title = e.target.elements.title.value.trim();
+        const image = e.target.elements.image.value.trim();
         const ingredients = e.target.elements.ingredients.value.trim();
 
-        const error = this.props.add(title, ingredients);
+        const error = this.props.add(title, image, ingredients);
         
         this.setState({error: error});
         
         if(!error) {
             e.target.elements.title.value = '';
+            e.target.elements.image.value = '';
             e.target.elements.ingredients.value = '';
             this.props.close();
         }
@@ -31,16 +33,18 @@ class AddRecipeModal extends React.Component {
                 onRequestClose={this.props.close}
                 className="modal"
             >
-                <button className="modalClose" onClick={this.props.close}>X</button>
-                <div>
+                <div className="modal-form">
                     <form onSubmit={this.add}>
                         <h3>Recipe</h3>
-                        <input type="text" name="title" placeholder="Recipe name" />
-                        <span>{this.state.error}</span>
+                        <input type="text" name="title" placeholder="Enter recipe name" />
+                        <h3>Image</h3>
+                        <input type="text" name="image" placeholder="Enter image url (optional)" />
                         <h3>Ingredients</h3>
-                        <textarea type="text" name="ingredients" placeholder="Enter ingredients (separated by comas)" rows="10"/>
+                        <textarea type="text" name="ingredients" placeholder="Enter list of ingredients (separated by comas)" rows="10"/>
+                        {this.state.error}
                         <br />
-                        <button className="modalSave">Save</button>
+                        <button className="red-button">Save</button>
+                        <button className="red-button" onClick={this.props.close}>Cancel</button>
                     </form>
                 </div>
             </Modal>

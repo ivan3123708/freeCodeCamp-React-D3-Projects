@@ -22,6 +22,10 @@ const config = {
             {
                 test: /\.s?css$/,
                 use: ['style-loader', 'css-loader', 'sass-loader']
+            },
+            {
+              test: /\.(png|jpg)$/,
+              loader: 'url-loader'
             }
         ]
     },

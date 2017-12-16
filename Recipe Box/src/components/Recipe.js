@@ -12,7 +12,7 @@ class Recipe extends React.Component {
         return (
             <div>
                 <p onClick={this.select}>{this.props.recipe}</p>
-                <button onClick={() => this.props.remove(this.props.recipe)} >X</button>
+                <button onClick={() => this.props.remove(this.props.recipe)} title="Remove this recipe" >X</button>
             </div>
         );
     }
