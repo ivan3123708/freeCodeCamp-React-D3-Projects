@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "author": "ivan-j",
   "scripts": {
-    "serve": "live-server /public",
     "dev-server": "webpack-dev-server"
   },
   "dependencies": {
