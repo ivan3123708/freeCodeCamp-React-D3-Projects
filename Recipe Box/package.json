@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "author": "ivan-j",
   "scripts": {
-    "serve": "live-server /public",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "build": "webpack -p --env production",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
