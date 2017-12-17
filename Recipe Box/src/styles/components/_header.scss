@@ -1,0 +1,35 @@
+.header {
+    margin: 0 0 2rem 0;
+    background: $theme-color-1;
+    color: white;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    padding-top: 2rem;
+    font-size: $font-l;
+}
+
+.header h4 {
+    margin: 0;
+    padding: 1rem 0 2rem 0;
+    font-size: $font-m;
+    font-style: italic;
+    font-weight: 200;
+    color: $theme-color-2;
+}
+
+@media (min-width: 40rem) {
+    .header {
+        text-align: left;
+    }
+
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .header h4 {
+        font-size: $font-m;
+    }
+}
